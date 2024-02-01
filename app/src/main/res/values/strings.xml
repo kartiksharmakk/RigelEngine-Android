@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RigelEngine</string>
+    <string name="fire">FIRE</string>
+    <string name="jump">JUMP</string>
+</resources>

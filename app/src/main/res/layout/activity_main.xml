@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:screenOrientation="landscape"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/RigelEngine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageButton
+        android:id="@+id/arrow_up"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:alpha="0.6"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/arrow_right"
+        app:layout_constraintStart_toStartOf="@+id/arrow_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@drawable/arrow_button"
+        app:tint="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/arrow_down"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:alpha="0.6"
+        android:background="#00FFFFFF"
+        android:rotation="180"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/arrow_right"
+        app:layout_constraintStart_toStartOf="@+id/arrow_left"
+        app:layout_constraintTop_toBottomOf="@+id/arrow_up"
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@drawable/arrow_button"
+        app:tint="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/arrow_right"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:alpha="0.6"
+        android:background="#00FFFFFF"
+        android:rotation="90"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/arrow_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/arrow_up"
+        app:layout_constraintVertical_bias="0.511"
+        app:srcCompat="@drawable/arrow_button"
+        app:tint="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/arrow_left"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:alpha="0.6"
+        android:background="#00FFFFFF"
+        android:rotation="270"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/arrow_down"
+        app:layout_constraintEnd_toStartOf="@+id/arrow_right"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/arrow_up"
+        app:layout_constraintVertical_bias="0.511"
+        app:srcCompat="@drawable/arrow_button"
+        app:tint="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/jump_button"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="28dp"
+        android:alpha="0.6"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:text="@string/jump"
+        app:layout_constraintBottom_toTopOf="@+id/fire_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/jump_button"
+        app:tint="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/fire_button"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:alpha="0.6"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845"
+        app:srcCompat="@drawable/fire_button"
+        app:tint="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/f1_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:alpha="0.9"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011"
+        app:srcCompat="@drawable/f1_button"
+        app:tint="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/h_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:alpha="0.9"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/f1_button"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011"
+        app:srcCompat="@drawable/h_button"
+        app:tint="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/esc_button"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:alpha="0.9"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011"
+        app:srcCompat="@drawable/esc_button"
+        app:tint="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/enter_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:alpha="0.9"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/esc_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011"
+        app:srcCompat="@drawable/enter_button"
+        app:tint="#FFFFFF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
